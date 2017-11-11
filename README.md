@@ -13,7 +13,9 @@ iOS Essential Coding Support [With Swift]
 ## [JSON Parsing](https://github.com/sumon-sarker/iOS-Essential)
  - URL(string : "URL")
  - URLSession.shared.dataTask(...){...}.resume()
+ - DispatchQueue.main.async { self.tableView.reloadData() }
  
 ## [Associative Array](https://github.com/sumon-sarker/iOS-Essential)
  - struct Name { ... }
  - var Obj = [Int : Name]()
+ - for X in Y as! [AnyObject] {...} 
