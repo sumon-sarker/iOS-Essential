@@ -20,7 +20,10 @@ UIView.animate(withDuration: 0.3, animations: {
 #### Transition
  - With Single View
 ```javascript
-UIView.transition(with: View1, duration: 3, options: [.transitionCurlDown,.showHideTransitionViews], animations: {
+UIView.transition(with: View1, duration: 3, options: [
+    .transitionCurlDown,
+    .showHideTransitionViews
+  ], animations: {
     ...
 }) { (complete) in
     ...
@@ -28,5 +31,9 @@ UIView.transition(with: View1, duration: 3, options: [.transitionCurlDown,.showH
 ```
  - With Multiple View
 ```javascript
-UIView.transition(from: View1, to: View2, duration: 0.3, options: [.transitionFlipFromRight,.showHideTransitionViews])
+UIView.transition(from: View1, to: View2, duration: 0.3, options: [
+    .transitionFlipFromRight,
+    .showHideTransitionViews
+   ]
+)
 ```
