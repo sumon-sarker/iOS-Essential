@@ -5,7 +5,7 @@ iOS Essential Coding Support [With Swift]
  - Animation
  - Transition
 
-## [UITableView](https://github.com/sumon-sarker/iOS-Essential)
+## [UITableView](https://github.com/sumon-sarker/iOS-Essential/tree/UITableView)
  - numberOfRowsInSection
  - cellForRowAt
  - didSelectRowAt
