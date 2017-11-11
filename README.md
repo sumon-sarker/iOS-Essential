@@ -10,7 +10,7 @@ iOS Essential Coding Support [With Swift]
  - cellForRowAt
  - didSelectRowAt
  
-## [JSON Parsing](https://github.com/sumon-sarker/iOS-Essential)
+## [JSON Parsing](https://github.com/sumon-sarker/iOS-Essential/tree/JSON-Parsing)
  - URL(string : "URL")
  - URLSession.shared.dataTask(...){...}.resume()
  - DispatchQueue.main.async { self.tableView.reloadData() }
