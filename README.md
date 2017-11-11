@@ -15,3 +15,18 @@ UIView.animate(withDuration: 0.3, animations: {
       /*Magic goes here*/
 }
 ```
+
+
+#### Transition
+ - With Single View
+```javascript
+UIView.transition(with: View1, duration: 3, options: [.transitionCurlDown,.showHideTransitionViews], animations: {
+    ...
+}) { (complete) in
+    ...
+}
+```
+ - With Multiple View
+```javascript
+UIView.transition(from: View1, to: View2, duration: 0.3, options: [.transitionFlipFromRight,.showHideTransitionViews])
+```
