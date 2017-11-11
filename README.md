@@ -21,5 +21,5 @@ iOS Essential Coding Support [With Swift]
  
 ## [Associative Array](https://github.com/sumon-sarker/iOS-Essential/tree/Associative-Array)
  - struct Name { ... }
- - var Obj = [Int : Name]()
- - for (Key,Value) in Y as [Int : Name] {...} 
+ - var Obj = \[Int : Name\]()
+ - for (Key,Value) in Y as \[Int : Name\] {...} 
