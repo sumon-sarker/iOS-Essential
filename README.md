@@ -1,21 +1,17 @@
-# iOS-Essential
-iOS Essential Coding Support [With Swift]
+# iOS-Essential [UIView]
 
-## [UIView](https://github.com/sumon-sarker/iOS-Essential)
- - Animation
- - Transition
-
-## [UITableView](https://github.com/sumon-sarker/iOS-Essential)
- - numberOfRowsInSection
- - cellForRowAt
- - didSelectRowAt
- 
-## [JSON Parsing](https://github.com/sumon-sarker/iOS-Essential)
- - URL(string : "URL")
- - URLSession.shared.dataTask(...){...}.resume()
- - DispatchQueue.main.async { self.tableView.reloadData() }
- 
-## [Associative Array](https://github.com/sumon-sarker/iOS-Essential)
- - struct Name { ... }
- - var Obj = [Int : Name]()
- - for X in Y as! [AnyObject] {...} 
+#### Animation
+ - UIView.animate(withDuration: TimeInterval, animations: <() -> Void>)
+```javascript
+UIView.animate(withDuration: 0.3) {
+    /*Magic goes here*/
+}
+```
+ - UIView.animate(withDuration: TimeInterval, animations: <() -> Void>, completion: <((Bool) -> Void)?((Bool) -> Void)?(Bool) -> Void>)
+```javascript
+UIView.animate(withDuration: 0.3, animations: {
+      /*Magic goes here*/
+  }) { (result) in
+      /*Magic goes here*/
+}
+```
