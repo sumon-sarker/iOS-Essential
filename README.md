@@ -7,27 +7,30 @@
  - URLSession.shared.dataTask(with: Url!){ ... }.resume()
  
 ```javascript
-let JsonUrl = "http://Domain_or_IP/path-to-api"
-let Url = URL(string: JsonUrl)
-URLSession.shared.dataTask(with: Url!) { (data, response, error) in
-    if let e = error {
-        print(e)
-    } else {
-        do {
-            let Json = try JSONSerialization.jsonObject(with: data!, options: [])
-            if let dictionary = Json as? [String: AnyObject]{
-                for (_, value) in dictionary {
-                    let obj = value as! [String : String]
-                    self.Titles.append(obj["title"]!)
-                    self.Images.append(obj["image"]!)
+override func viewDidLoad() {
+    super.viewDidLoad()
+    let JsonUrl = "http://Domain_or_IP/path-to-api"
+    let Url = URL(string: JsonUrl)
+    URLSession.shared.dataTask(with: Url!) { (data, response, error) in
+        if let e = error {
+            print(e)
+        } else {
+            do {
+                let Json = try JSONSerialization.jsonObject(with: data!, options: [])
+                if let dictionary = Json as? [String: AnyObject]{
+                    for (_, value) in dictionary {
+                        let obj = value as! [String : String]
+                        self.Titles.append(obj["title"]!)
+                        self.Images.append(obj["image"]!)
+                    }
+                    DispatchQueue.main.async {
+                        self.tableView.reloadData()
+                    }
                 }
-                DispatchQueue.main.async {
-                    self.tableView.reloadData()
-                }
-            }
-        } catch _{
+            } catch _{
 
+            }
         }
-    }
-}.resume()
+    }.resume()
+}
 ```
