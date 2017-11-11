@@ -1,21 +1,20 @@
-# iOS-Essential
-iOS Essential Coding Support [With Swift]
+# iOS-Essential [Associative Array]
 
-## [UIView](https://github.com/sumon-sarker/iOS-Essential/tree/UIView)
- - Animation
- - Transition
+#### Structure
+ - struct StructureName{ ... }
+ 
+```javascript
+struct Data{
+    var Name : String
+    var Age  : Int
+}
 
-## [UITableView](https://github.com/sumon-sarker/iOS-Essential)
- - numberOfRowsInSection
- - cellForRowAt
- - didSelectRowAt
- 
-## [JSON Parsing](https://github.com/sumon-sarker/iOS-Essential)
- - URL(string : "URL")
- - URLSession.shared.dataTask(...){...}.resume()
- - DispatchQueue.main.async { self.tableView.reloadData() }
- 
-## [Associative Array](https://github.com/sumon-sarker/iOS-Essential)
- - struct Name { ... }
- - var Obj = [Int : Name]()
- - for X in Y as! [AnyObject] {...} 
+var AssocArray1 = [Int : Data]()
+
+AssocArray1[0] = Data(Name : "Sumon Sarker", Age : N)
+AssocArray1[1] = Data(Name : "Another Sarker", Age : N)
+
+for (key,val) in AssocArray1 as [Int : Data]{
+    print(val.Name,val.Age)
+}
+```
