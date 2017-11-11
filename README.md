@@ -1,20 +1,19 @@
-# iOS-Essential [Associative Array]
+# iOS-Essential [UIImage]
 
-#### Structure
- - struct StructureName{ ... }
+#### From Internal Source
+ - UIImage(named : "string")
  
 ```javascript
-struct Data{
-    var Name : String
-    var Age  : Int
-}
+(ImageView) = UIImage(named : "string")
+```
 
-var AssocArray1 = [Int : Data]()
-
-AssocArray1[0] = Data(Name : "Sumon Sarker", Age : N)
-AssocArray1[1] = Data(Name : "Another Sarker", Age : N)
-
-for (key,val) in AssocArray1 as [Int : Data]{
-    print(val.Name,val.Age)
-}
+#### From External Source
+ - NSURL(string: "URL")
+ - NSData(contentsOf: NSURL)
+ - UIImage(data : NSData as Data)
+ 
+```javascript
+let Img     = NSURL(string: Images[indexPath.row])
+let data    = NSData(contentsOf: (Img as URL?)!)
+(ImageView) = UIImage(data : data! as Data)
 ```
