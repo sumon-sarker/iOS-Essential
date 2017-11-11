@@ -15,7 +15,7 @@ iOS Essential Coding Support [With Swift]
  - URLSession.shared.dataTask(...){...}.resume()
  - DispatchQueue.main.async { self.tableView.reloadData() }
  
-## [Associative Array](https://github.com/sumon-sarker/iOS-Essential)
+## [Associative Array](https://github.com/sumon-sarker/iOS-Essential/tree/Associative-Array)
  - struct Name { ... }
  - var Obj = [Int : Name]()
- - for X in Y as! [AnyObject] {...} 
+ - for (Key,Value) in Y as [Int : Name] {...} 
