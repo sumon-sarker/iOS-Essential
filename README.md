@@ -22,7 +22,7 @@ for (key,val) in AssocArray1 as [Int : Data]{
  
 ```javascript
 struct CustomData{
-	var Name 	 : String
+	var Name 	: String
 	var Phone 	: String
 	var Email 	: String
 
