@@ -18,3 +18,26 @@ for (key,val) in AssocArray1 as [Int : Data]{
     print(val.Name,val.Age)
 }
 ```
+#### Initialize
+ 
+```javascript
+struct CustomData{
+	var Name 	 : String
+	var Phone 	: String
+	var Email 	: String
+
+	init(Name : String = "", Phone : String = "", Email : String = ""){
+		self.Name 	= Name
+		self.Phone 	= Phone
+		self.Email 	= Email
+	}
+}
+
+var Data = [Int : CustomData]()
+
+for X in 1...10{
+	Data[X] = CustomData(Name : "Sumon", Phone : "0192xxxxxxx", Email : "sumon@...com")
+}
+
+print(Data)
+```
