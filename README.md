@@ -25,19 +25,27 @@ struct CustomData{
 	var Name 	: String
 	var Phone 	: String
 	var Email 	: String
+	var Photos 	= [Int : String]()
 
-	init(Name : String = "", Phone : String = "", Email : String = ""){
+	init(Name : String = "", Phone : String = "", Email : String = "", Photos : [Int : String]){
 		self.Name 	= Name
 		self.Phone 	= Phone
 		self.Email 	= Email
+		self.Photos     = Photos
 	}
 }
 
 var Data = [Int : CustomData]()
+var Pto  = [Int : String]()
 
-for X in 1...10{
-	Data[X] = CustomData(Name : "Sumon", Phone : "0192xxxxxxx", Email : "sumon@...com")
+Pto[0] = "PhotoURL1"
+Pto[1] = "PhotoURL2"
+
+for X in 0...10{
+	Data[X] = CustomData(Name : "Sumon", Phone : "email.com", Email : "01920025943", Photos : Pto)
 }
 
-print(Data)
+for (X,Y) in Data{
+	print(X,Y)
+}
 ```
