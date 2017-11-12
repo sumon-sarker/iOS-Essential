@@ -27,3 +27,6 @@ iOS Essential Coding Support [With Swift]
  
  ## [extension](https://github.com/sumon-sarker/iOS-Essential/tree/extension)
  - How swift extension works
+ - Initializers
+ - Methods
+ - Example
