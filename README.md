@@ -1,39 +1,54 @@
-# iOS-Essential [UIView]
+# iOS-Essential [extension]
+Extensions add new functionality to an existing class, structure, enumeration, or protocol type. This includes the ability to extend types for which you do not have access to the original source code.
 
-#### Animation
- - UIView.animate(withDuration: TimeInterval, animations: <() -> Void>)
+#### Syntax
+ - extension Type { ... }
 ```javascript
-UIView.animate(withDuration: 0.3) {
-    /*Magic goes here*/
-}
-```
- - UIView.animate(withDuration: TimeInterval, animations: <() -> Void>, completion: <((Bool) -> Void)?((Bool) -> Void)?(Bool) -> Void>)
-```javascript
-UIView.animate(withDuration: 0.3, animations: {
-      /*Magic goes here*/
-  }) { (result) in
-      /*Magic goes here*/
+extension String {
+   ...
 }
 ```
 
-
-#### Transition
- - With Single View
+#### Initializers
 ```javascript
-UIView.transition(with: View1, duration: 3, options: [
-    .transitionCurlDown,
-    .showHideTransitionViews
-  ], animations: {
-    ...
-}) { (complete) in
-    ...
+struct Size {
+    var width = 0.0, height = 0.0
+}
+struct Point {
+    var x = 0.0, y = 0.0
+}
+struct Rect {
+    var origin = Point()
+    var size = Size()
 }
 ```
- - With Multiple View
+
+#### Methods
 ```javascript
-UIView.transition(from: View1, to: View2, duration: 0.3, options: [
-    .transitionFlipFromRight,
-    .showHideTransitionViews
-   ]
-)
+extension Int {
+    func repetitions(task: () -> Void) {
+        for _ in 0..<self {
+            task()
+        }
+    }
+}
+
+3.repetitions {
+    print("Hello!")
+}
+// Hello!
+// Hello!
+// Hello!
 ```
+#### Example
+```javascript
+extension String{
+	var Add : String {
+		return self + " Newly Added"
+	}
+}
+
+let x = "Hello"
+print("\(x.Add)")
+```
+
