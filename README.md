@@ -19,6 +19,12 @@ iOS Essential Coding Support [With Swift]
  - URLSession.shared.dataTask(...){...}.resume()
  - DispatchQueue.main.async { self.tableView.reloadData() }
  
+## [Encodable and Decodable](https://github.com/sumon-sarker/iOS-Essential/tree/EncodableDecodable)
+ - struct Name : Encodable { ... }
+ - JSONEncoder().encode(EncodeStructName)
+ - struct Name : Decodable { ... }
+ - JSONDecoder().decode([DecodeStructName].self, from : ResponseData)
+ 
 ## [Associative Array](https://github.com/sumon-sarker/iOS-Essential/tree/Associative-Array)
  - struct Name { ... }
  - var Obj = \[Int : Name\]()
