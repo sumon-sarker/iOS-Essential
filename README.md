@@ -42,10 +42,12 @@ func HeyDecoder() {
     let task = session.dataTask(with: url!) { (data, _, _) in
        guard let data = data else{ return }
         do{
+            //IF Array [MyData].self
             let inf = try JSONDecoder().decode([MyData].self, from : data)
             for i in inf{
                 print(i)
             }
+            //IF Single MyData.self
         }catch{
             print("Decode Error!")
         }
