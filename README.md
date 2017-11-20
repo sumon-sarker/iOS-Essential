@@ -1,36 +1,65 @@
-# iOS-Essential [JSON Parsing]
+# iOS-Essential [Encodable]
+
+#### Associative Data Array
+```javascript
+[
+    "title"=>"Hello Users",
+    "image"=>"users.png",
+    "hello"=>[
+        "World"=>"Jane",
+        "Complex"=>[
+            "hey"=>"Buddy"
+        ]
+    ]
+]
+```
+#### Decodable Data Structure
+```javascript
+struct MyData : Decodable{
+    let title : String
+    let image : String
+    let hello : Hello?
+}
+
+struct Hello : Decodable{
+    let World   : String
+    let Complex : Complex?
+}
+
+struct Complex : Decodable{
+    let hey : String
+}
+```
 
 #### Tasks
- - URL(string : "url")
- - URLSession.shared.dataTask(with: Url!)
- - DispatchQueue.main.async { self.tableView.reloadData() }
- - URLSession.shared.dataTask(with: Url!){ ... }.resume()
- 
-```javascript
-override func viewDidLoad() {
-    super.viewDidLoad()
-    let JsonUrl = "http://Domain_or_IP/path-to-api"
-    let Url = URL(string: JsonUrl)
-    URLSession.shared.dataTask(with: Url!) { (data, response, error) in
-        if let e = error {
-            print(e)
-        } else {
-            do {
-                let Json = try JSONSerialization.jsonObject(with: data!, options: [])
-                if let dictionary = Json as? [String: AnyObject]{
-                    for (_, value) in dictionary {
-                        let obj = value as! [String : String]
-                        self.Titles.append(obj["title"]!)
-                        self.Images.append(obj["image"]!)
-                    }
-                    DispatchQueue.main.async {
-                        self.tableView.reloadData()
-                    }
-                }
-            } catch _{
+ - struct Name : Decodable { ... }
+ - JSONEncoder().decode(EncodeStructName)
 
+```javascript
+func HeyDecoder() {
+    let url = URL(string: "http://localhost:8888/ios-api/api.php")
+    let session = URLSession.shared
+    let task = session.dataTask(with: url!) { (data, _, _) in
+       guard let data = data else{ return }
+        do{
+            let inf = try JSONDecoder().decode([MyData].self, from : data)
+            for i in inf{
+                print(i)
             }
+        }catch{
+            print("Decode Error!")
         }
-    }.resume()
+     }
+     task.resume()
+}
+```
+
+#### Tasks
+ - struct Name : Encodable { ... }
+ - JSONEncoder().encode(EncodeStructName)
+
+```javascript
+func HeyEncoder() {
+    
 }
 ```
