@@ -33,7 +33,7 @@ struct Complex : Decodable{
 
 #### Tasks
  - struct Name : Decodable { ... }
- - JSONEncoder().decode(EncodeStructName)
+ - JSONDecoder().decode(DecodableStruct, from : ResponseData)
 
 ```javascript
 func HeyDecoder() {
