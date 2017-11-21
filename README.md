@@ -28,7 +28,6 @@ override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: Inde
 
 #### How to set Remote Data to Tableview
 ```javascript
-/**/
 override func viewDidLoad() {
     super.viewDidLoad()
     self.RemoteData()
@@ -40,5 +39,5 @@ func RemoteData(){
       self.tableView.reloadData()
   }
   ...
- }
+}
 ```
