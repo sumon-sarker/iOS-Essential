@@ -25,3 +25,20 @@ override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: Inde
    let Index = indexPath.row
 }
 ```
+
+#### How to set Remote Data to Tableview
+```javascript
+/**/
+override func viewDidLoad() {
+    super.viewDidLoad()
+    self.RemoteData()
+}
+
+func RemoteData(){
+  ...
+  DispatchQueue.main.async {
+      self.tableView.reloadData()
+  }
+  ...
+ }
+```
