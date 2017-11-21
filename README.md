@@ -1,4 +1,4 @@
-# iOS-Essential [Encodable]
+# iOS-Essential [Decodable]
 
 #### Associative Data Array
 ```javascript
@@ -56,12 +56,55 @@ func HeyDecoder() {
 }
 ```
 
+# iOS-Essential [Encodable]
+
+#### Encodable Data Structure
+```javascript
+struct MyData : Encodable{
+    let title : String
+    let image : String
+    let hello : Hello?
+}
+
+struct Hello : Encodable{
+    let World   : String
+    let Complex : Complex?
+}
+
+struct Complex : Encodable{
+    let hey : String
+}
+```
+
 #### Tasks
  - struct Name : Encodable { ... }
  - JSONEncoder().encode(EncodeStructName)
 
 ```javascript
 func HeyEncoder() {
+    let PostData    = MyData(
+        title: "Title",
+        image: "Image",
+        hello: Hello(
+            World: "World String",
+            Complex: Complex(
+                hey: "Jimmy"
+            )
+        )
+    )
+    do{
+        let encoded = try JSONEncoder().encode(PostData)
+        RequestUrl.httpBody = encoded
+    }catch _{
+        print("Encoding Error!")
+    }
     
+    URLSession.shared.dataTask(with: req) { (data, _, _) in
+        if let returnData = String(data: data!, encoding: .utf8) {
+            print(returnData)
+        } else {
+            print("Parse error!")
+        }
+    }.resume()
 }
 ```
