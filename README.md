@@ -38,8 +38,7 @@ UIView.transition(from: View1, to: View2, duration: 0.3, options: [
 )
 ```
 
-#### Transition Swipe Gester Example
- - With Single View
+#### Transition Swipe Gester Example (Multiple View)
 ```javascript
 struct Person {
     var PrevIndex   : Int
