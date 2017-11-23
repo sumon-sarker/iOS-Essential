@@ -55,8 +55,8 @@ class ViewController: UIViewController {
     var ViewArray  : [UIView?] = []
     var ViewIndex  = [Int:Person]()
     var CurrentIndex    = 0
-    var NextIndex       = 0
-    var PrevIndex       = 0
+    //var NextIndex       = 0
+    //var PrevIndex       = 0
     
     func PrepareIndex(){
         CurrentIndex = ViewArray.count - 1
