@@ -76,7 +76,6 @@ class ViewController: UIViewController {
     @IBAction func LeftSwipe(_ sender: UISwipeGestureRecognizer) {
         print("Left Swipe")
         CurrentIndex = CurrentIndex % 5;
-        self.PrintIndex()
         UIView.transition(from: ViewArray[(self.ViewIndex[CurrentIndex]?.CurIndex)!]!, to: ViewArray[(self.ViewIndex[CurrentIndex]?.NextIndex)!]!, duration: 0.3, options: [.transitionFlipFromRight,.showHideTransitionViews])
         self.CurrentIndex = self.CurrentIndex + 1
     }
@@ -84,7 +83,6 @@ class ViewController: UIViewController {
     @IBAction func RightSwipe(_ sender: UISwipeGestureRecognizer) {
         print("Right Swipe")
         CurrentIndex = CurrentIndex % 5;
-        self.PrintIndex()
         UIView.transition(from: ViewArray[(self.ViewIndex[CurrentIndex]?.CurIndex)!]!, to: ViewArray[(self.ViewIndex[CurrentIndex]?.PrevIndex)!]!, duration: 0.3, options: [.transitionFlipFromLeft,.showHideTransitionViews])
         self.CurrentIndex = self.CurrentIndex - 1
         if(self.CurrentIndex<0){
