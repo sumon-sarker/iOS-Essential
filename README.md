@@ -1,6 +1,9 @@
 # iOS-Essential
 iOS Essential Coding Support [With Swift]
 
+## [UINavigationController](https://github.com/sumon-sarker/iOS-Essential/tree/UINavigationController)
+ - Hide Buttons - self.navigationItem.setHidesBackButton(true, animated:true);
+
 ## [UIView](https://github.com/sumon-sarker/iOS-Essential/tree/UIView)
  - Animation
  - Transition
