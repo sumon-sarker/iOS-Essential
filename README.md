@@ -1,11 +1,14 @@
-# iOS-Essential [UINavigationController]
+# iOS-Essential [DispatchQueue]
 
-####  Hide Buttons
- - self.navigationItem.setHidesBackButton(true, animated:true);
+####  Execute code in Main Thread
+ - DispatchQueue.main.async(execute: { ... })
 
 ```javascript
-override func viewDidLoad() {
-    super.viewDidLoad()
-    self.navigationItem.setHidesBackButton(true, animated:true);
+func whoAmI() {
+    ...
+    DispatchQueue.main.async(execute: {
+     //Work Needs to be done here
+    })
+    ...
 }
 ```
