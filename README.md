@@ -32,6 +32,8 @@
  - var Obj = \[Int : Name\]()
  - for (Key,Value) in Y as \[Int : Name\] {...} 
  
+###### [String](https://github.com/sumon-sarker/iOS-Essential/tree/String)
+ - Data to String Conversion
  
 ###### [extension](https://github.com/sumon-sarker/iOS-Essential/tree/extension)
  - How swift extension works
