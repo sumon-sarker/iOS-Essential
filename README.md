@@ -4,9 +4,9 @@
  - Hide Buttons - self.navigationItem.setHidesBackButton(true, animated:true);
 
 ###### [UIView](https://github.com/sumon-sarker/iOS-Essential/tree/UIView)
+ - addSubView()
  - Animation
  - Transition
- - addSubView()
  
 ###### [UIImage](https://github.com/sumon-sarker/iOS-Essential/tree/UIImage)
  - Internal Source
