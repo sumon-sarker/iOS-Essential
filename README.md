@@ -1,6 +1,6 @@
 # iOS-Essential [DispatchQueue]
 
-####  Execute code in Main Thread
+####  Execute task in main thread
  - DispatchQueue.main.async(execute: { ... })
 
 ```javascript
@@ -13,7 +13,7 @@ func whoAmI() {
 }
 ```
 
-####  Execute code in Main Thread after Time Duration
+####  Execute task in Main Thread after Time Interval
  - DispatchQueue.main.asyncAfter(deadline: .now() + 10.0, execute: { ... })
 
 ```javascript
