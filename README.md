@@ -3,6 +3,9 @@
 ###### [UINavigationController](https://github.com/sumon-sarker/iOS-Essential/tree/UINavigationController)
  - Hide Buttons - self.navigationItem.setHidesBackButton(true, animated:true);
 
+###### [UIActivityIndicatorView](https://github.com/sumon-sarker/iOS-Essential/tree/UIActivityIndicatorView)
+ - ActivityIndicator for Waiting Task
+ 
 ###### [UIView](https://github.com/sumon-sarker/iOS-Essential/tree/UIView)
  - addSubView()
  - Animation
