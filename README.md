@@ -6,6 +6,7 @@
 ###### [UIView](https://github.com/sumon-sarker/iOS-Essential/tree/UIView)
  - Animation
  - Transition
+ - addSubView()
  
 ###### [UIImage](https://github.com/sumon-sarker/iOS-Essential/tree/UIImage)
  - Internal Source
