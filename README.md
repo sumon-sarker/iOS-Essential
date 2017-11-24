@@ -1,16 +1,21 @@
-# iOS-Essential [String]
+# iOS-Essential [UIActivityIndicatorView]
 
-####  Data to String
- - String(data: data!, encoding: .utf8)
+####  UIActivityIndicatorView
+ - ActivityIndicator for Waiting Task
 
 ```javascript
+var MyIndicator: UIActivityIndicatorView = UIActivityIndicatorView()
+
 func whoAmI() {
     ...
-    if let returnData = String(data: data!, encoding: .utf8) {
-        print(returnData)
-    } else {
-        print("Parse error!")
-    }
+    MyIndicator.center = self.ProgressHelper.center
+    MyIndicator.hidesWhenStopped = true
+    MyIndicator.activityIndicatorViewStyle = UIActivityIndicatorViewStyle.whiteLarge
+    view.addSubview(activityIndicator)
+    MyIndicator.startAnimating()
+    ...
+    ...
+    MyIndicator.startAnimating()
     ...
 }
 ```
