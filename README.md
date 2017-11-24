@@ -1,5 +1,19 @@
 # iOS-Essential [UIView]
 
+#### addSubView
+ - ViewObject.addSubview(ChildView)
+```javascript
+
+var ChildView : UIView = UIView()
+
+func WhiAmI(){
+   ...
+   ChildView.backgroundColor = UIColor(named: "black")
+   view.addSubview(ChildView)
+   ...
+}
+```
+
 #### Animation
  - UIView.animate(withDuration: TimeInterval, animations: <() -> Void>)
 ```javascript
