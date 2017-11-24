@@ -46,5 +46,6 @@
  - Example
  
 ###### [DispatchQueue Main Thread]( https://github.com/sumon-sarker/iOS-Essential/tree/DispatchQueue)
- - How to execute task in main thread
+ - Execute task in main thread
+ - Execute task in Main Thread after Time Interval
 
