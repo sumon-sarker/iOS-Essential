@@ -1,14 +1,16 @@
-# iOS-Essential [DispatchQueue]
+# iOS-Essential [String]
 
-####  Execute code in Main Thread
- - DispatchQueue.main.async(execute: { ... })
+####  Data to String
+ - String(data: data!, encoding: .utf8)
 
 ```javascript
 func whoAmI() {
     ...
-    DispatchQueue.main.async(execute: {
-     //Work Needs to be done here
-    })
+    if let returnData = String(data: data!, encoding: .utf8) {
+        print(returnData)
+    } else {
+        print("Parse error!")
+    }
     ...
 }
 ```
