@@ -42,7 +42,7 @@ func RemoteData(){
 }
 ```
 
-#### Row automatic Height
+#### Automatic Row Height
 ```javascript
 override func viewDidLoad() {
     super.viewDidLoad()
