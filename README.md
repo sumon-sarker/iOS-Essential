@@ -19,6 +19,7 @@
  - numberOfRowsInSection
  - cellForRowAt
  - didSelectRowAt
+ - Row automatic Height
  
 ###### [JSON Parsing](https://github.com/sumon-sarker/iOS-Essential/tree/JSON-Parsing)
  - URL(string : "URL")
