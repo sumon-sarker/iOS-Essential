@@ -49,4 +49,8 @@
 ###### [DispatchQueue Main Thread]( https://github.com/sumon-sarker/iOS-Essential/tree/DispatchQueue)
  - Execute task in main thread
  - Execute task in Main Thread after Time Interval
+ 
+###### [Podfile Instalation]( https://github.com/sumon-sarker/iOS-Essential/tree/PodfileInstall)
+ - How to install Podfile
+ - Add External Library
 
