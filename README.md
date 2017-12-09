@@ -12,7 +12,8 @@ class YourClassName: UIViewController, UITabBarDelegate {
     }
 
     func tabBar(_ tabBar: UITabBar, didSelect item: UITabBarItem) {
-        print("Code Goes Here...")
+        let SelectedTabIndex = tabBar.items?.index(of: item)
+        print("Code Goes Here With SelectedTabIndex \(SelectedTabIndex)")
     }
 }
 ```
