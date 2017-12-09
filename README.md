@@ -1,7 +1,8 @@
 # iOS-Essential [Swift 4.0]
 
 ###### [UINavigationController](https://github.com/sumon-sarker/iOS-Essential/tree/UINavigationController)
- - Hide Buttons - self.navigationItem.setHidesBackButton(true, animated:true);
+ - Hide Back Buttons - self.navigationItem.setHidesBackButton(true, animated:true);
+ - Right Button Programmatically - UIBarButtonItem()
 
 ###### [UIActivityIndicatorView](https://github.com/sumon-sarker/iOS-Essential/tree/UIActivityIndicatorView)
  - ActivityIndicator for Waiting Task
