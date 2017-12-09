@@ -1,5 +1,8 @@
 # iOS-Essential [Swift 4.0]
 
+####  [UITabBar](https://github.com/sumon-sarker/iOS-Essential/tree/UITabBar)
+ - Set TabBar Item Action - func tabBar(_ tabBar: UITabBar, didSelect item: UITabBarItem){ ... }
+
 ###### [UINavigationController](https://github.com/sumon-sarker/iOS-Essential/tree/UINavigationController)
  - Hide Back Buttons - self.navigationItem.setHidesBackButton(true, animated:true);
  - Right Button Programmatically - UIBarButtonItem()
