@@ -30,3 +30,26 @@ override func viewDidLoad() {
     print("I Am Here ...")
 }
 ```
+#### Multiple UIBarButtonItems on right side of Navigation Bar
+
+```javascript
+override func viewDidLoad() {
+    super.viewDidLoad()
+
+    let editImage   = UIImage(named: "plus")!
+    let searchImage = UIImage(named: "search")!
+
+    let editButton   = UIBarButtonItem(image: editImage,  style: .Plain, target: self, action: "didTapEditButton:")
+    let searchButton = UIBarButtonItem(image: searchImage,  style: .Plain, target: self, action: "didTapSearchButton:")
+    
+    navigationItem.rightBarButtonItems = [editButton, searchButton]
+}
+
+func didTapEditButton(sender: AnyObject){
+    print("I Am EDIT ...")
+}
+
+func didTapSearchButton(sender: AnyObject){
+    print("I Am SEARCH ...")
+}
+```
