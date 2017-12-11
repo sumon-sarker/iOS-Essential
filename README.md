@@ -6,6 +6,7 @@
 ###### [UINavigationController](https://github.com/sumon-sarker/iOS-Essential/tree/UINavigationController)
  - Hide Back Buttons - self.navigationItem.setHidesBackButton(true, animated:true);
  - Right Button Programmatically - UIBarButtonItem()
+ - Multiple UIBarButtonItems on right side of Navigation Bar
 
 ###### [UIActivityIndicatorView](https://github.com/sumon-sarker/iOS-Essential/tree/UIActivityIndicatorView)
  - ActivityIndicator for Waiting Task
