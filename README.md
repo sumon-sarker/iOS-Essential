@@ -50,3 +50,20 @@ override func viewDidLoad() {
     tableView.rowHeight = UITableViewAutomaticDimension
 }
 ```
+
+#### Checkbox (accessoryType)
+```javascript
+var SelectedData = [String:String]()
+
+func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    if MyTable.cellForRow(at: indexPath)?.accessoryType == UITableViewCellAccessoryType.checkmark{
+        MyTable.cellForRow(at: indexPath)?.accessoryType = UITableViewCellAccessoryType.none
+         /*Release Selected Data*/
+        SelectedData[TableData[indexPath.row]] = nil
+    }else{
+        MyTable.cellForRow(at: indexPath)?.accessoryType = UITableViewCellAccessoryType.checkmark
+        /*Store Selected Data*/
+        SelectedData[TableData[indexPath.row]] = TableData[indexPath.row]
+    }
+}
+```
