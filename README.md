@@ -26,7 +26,8 @@
  - didSelectRowAt
  - Row automatic Height
  - Checkbox (accessoryType)
-  
+ - Expandable TableView
+ 
 ###### [JSON Parsing](https://github.com/sumon-sarker/iOS-Essential/tree/JSON-Parsing)
  - URL(string : "URL")
  - URLSession.shared.dataTask(...){...}.resume()
