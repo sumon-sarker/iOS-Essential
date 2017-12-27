@@ -22,6 +22,7 @@
 ###### [UIImage](https://github.com/sumon-sarker/iOS-Essential/tree/UIImage)
  - Internal Source
  - External Source
+ - Image Lazy Loading
 
 ###### [UITableView](https://github.com/sumon-sarker/iOS-Essential/tree/UITableView)
  - numberOfRowsInSection
