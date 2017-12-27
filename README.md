@@ -28,6 +28,11 @@
  - Checkbox (accessoryType)
  - Expandable TableView
  
+ ###### [UICollectionView](https://github.com/sumon-sarker/iOS-Essential/tree/UICollectionView)
+ - numberOfItemsInSection
+ - cellForItemAt
+ - Custom Layout
+ 
 ###### [JSON Parsing](https://github.com/sumon-sarker/iOS-Essential/tree/JSON-Parsing)
  - URL(string : "URL")
  - URLSession.shared.dataTask(...){...}.resume()
