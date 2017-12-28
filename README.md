@@ -1,16 +1,27 @@
-# iOS-Essential [String]
+# iOS-Essential [UITextField]
 
-####  Data to String
- - String(data: data!, encoding: .utf8)
+#### UITextField Keyboard Overflow (Solution)
+ - Delegate Targeted TextFields to ViewController
 
 ```javascript
-func whoAmI() {
-    ...
-    if let returnData = String(data: data!, encoding: .utf8) {
-        print(returnData)
-    } else {
-        print("Parse error!")
+import UIKit
+
+class LoginController: UIViewController, UITextFieldDelegate {
+
+    @IBOutlet weak var LoginScrollView: UIScrollView!
+    
+    func textFieldDidBeginEditing(_ textField: UITextField) {
+        LoginScrollView.setContentOffset(CGPoint(x: 0, y: 60), animated: true)
     }
-    ...
+    
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        LoginScrollView.setContentOffset(CGPoint(x: 0, y: 0), animated: true)
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+    }
+    
 }
 ```
