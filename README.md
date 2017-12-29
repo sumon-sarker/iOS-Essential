@@ -70,11 +70,25 @@ func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
 
 #### Get Last Index of Rows (Load more purpose)
 ```javascript
+var IsLoading : Bool = false
+
 func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
     /*Index started from 0*/
     let LastRow = indexPath.row + 1;
-    if self.MyDatas.count == LastRow{
-        print("Load more...")
+    if self.MyDatas?.count == LastRow{
+        if(self.IsLoading == false){
+            self.IsLoading = true
+            self.LoadMoreData()
+        }
     }
+}
+
+func LoadMoreData(){
+    /*REST OF ASYNC CODE GOES HERE*/
+    for Data in GetDataFromAsync{
+        self.MyDatas?.append(Data)
+    }
+    self.ProcessTable.reloadData()
+    self.IsLoading = false
 }
 ```
