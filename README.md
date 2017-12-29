@@ -67,3 +67,14 @@ func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
     }
 }
 ```
+
+#### Get Last Index of Rows (Load more purpose)
+```javascript
+func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+    /*Index started from 0*/
+    let LastRow = indexPath.row + 1;
+    if self.MyDatas.count == LastRow{
+        print("Load more...")
+    }
+}
+```
