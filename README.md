@@ -1,4 +1,3 @@
 # iOS-Essential [ChartsLibrary]
 
-####  BarChart
- - BarChart
+ - [LineChart](https://github.com/sumon-sarker/iOS-Essential/blob/ChartsLibrary/BarChartView.swift)
