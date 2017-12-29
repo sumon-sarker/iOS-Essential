@@ -64,6 +64,9 @@
  - Initializers
  - Methods
  - Example
+
+###### [ChartsLibrary](https://github.com/sumon-sarker/iOS-Essential/tree/ChartsLibrary)
+ - LineChart
  
 ###### [DispatchQueue Main Thread]( https://github.com/sumon-sarker/iOS-Essential/tree/DispatchQueue)
  - Execute task in main thread
