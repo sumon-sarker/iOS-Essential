@@ -34,6 +34,7 @@
  - Row automatic Height
  - Checkbox (accessoryType)
  - Expandable TableView
+ - Get Last Index of Rows (Load more purpose)
  
  ###### [UICollectionView](https://github.com/sumon-sarker/iOS-Essential/tree/UICollectionView)
  - numberOfItemsInSection
