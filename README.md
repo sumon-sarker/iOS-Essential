@@ -10,6 +10,7 @@
  - Hide Back Buttons - self.navigationItem.setHidesBackButton(true, animated:true);
  - Right Button Programmatically - UIBarButtonItem()
  - Multiple UIBarButtonItems on right side of Navigation Bar
+ - Back Button functionalities (Hide,Show,Text,Image etc)
 
 ###### [UIActivityIndicatorView](https://github.com/sumon-sarker/iOS-Essential/tree/UIActivityIndicatorView)
  - ActivityIndicator for Waiting Task
