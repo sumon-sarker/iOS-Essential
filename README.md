@@ -22,3 +22,6 @@ if let data = UserDefaults.standard.value(forKey:"songs") as? Data {
     let songs2 = try? PropertyListDecoder().decode(Array<Song>.self, from: data)
 }
 ```
+
+
+###### [Details about Codable](https://hackernoon.com/everything-about-codable-in-swift-4-97d0e18a2999)
