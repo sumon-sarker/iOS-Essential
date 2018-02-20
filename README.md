@@ -92,3 +92,8 @@ func LoadMoreData(){
     self.IsLoading = false
 }
 ```
+
+#### No Border Style
+```javascript
+self.tableView.separatorStyle = UITableViewCellSeparatorStyle.none
+```
