@@ -36,6 +36,7 @@
  - Checkbox (accessoryType)
  - Expandable TableView
  - Get Last Index of Rows (Load more purpose)
+ - No Border Style
  
  ###### [UICollectionView](https://github.com/sumon-sarker/iOS-Essential/tree/UICollectionView)
  - numberOfItemsInSection
