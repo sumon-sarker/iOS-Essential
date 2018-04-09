@@ -14,7 +14,15 @@ struct Coder : Codable {
     var mobil : String?
 }
 
-var Data = GroceryProduct(name: "Name 1", points: 500, description: "Description 1", Hello: Coder(vroom: "Vroom 1", mobil: "Mobil 1"));
+var Data = GroceryProduct(
+    name: "Name 1",
+    points: 500,
+    description: "Description 1",
+    Hello: Coder(
+        vroom: "Vroom 1",
+        mobil: "Mobil 1"
+    )
+);
 
 print("Data    : \(Data)")
 let Encode = try JSONEncoder().encode(Data)
