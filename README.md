@@ -1,3 +1,28 @@
+# iOS-Essential [Codable]
+
+#### Codable Data Structure
+```javascript
+struct GroceryProduct: Codable {
+    var name: String
+    var points: Int
+    var description: String?
+    var Hello : Coder?
+}
+
+struct Coder : Codable {
+    var vroom : String?
+    var mobil : String?
+}
+
+var Data = GroceryProduct(name: "Name 1", points: 500, description: "Description 1", Hello: Coder(vroom: "Vroom 1", mobil: "Mobil 1"));
+
+print("Data    : \(Data)")
+let Encode = try JSONEncoder().encode(Data)
+print("Encoded : \(Encode)")
+let Decode = try JSONDecoder().decode(GroceryProduct.self, from: Encode)
+print("Decoded : \(Decode)")
+```
+
 # iOS-Essential [Decodable]
 
 #### Associative Data Array
@@ -108,3 +133,8 @@ func HeyEncoder() {
     }.resume()
 }
 ```
+
+
+
+
+
